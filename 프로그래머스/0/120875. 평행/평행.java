@@ -17,6 +17,10 @@ class Solution {
         double ang1 = (double) (dots[i][1] - dots[j][1]) / (dots[i][0] - dots[j][0]);
         double ang2 = (double) (dots[k][1] - dots[l][1]) / (dots[k][0] - dots[l][0]);
 
-        return ang1 == ang2;
+        if (ang1 == ang2) {
+            return true;
+        } else {
+            return false;
+        }
     }
 }
